@@ -1,0 +1,20 @@
+@mixin borderRadius($radius) {
+  border-radius: $radius;
+}
+
+//I don't know what else I'd want. I dislike using flex for most things.
+@mixin flex() {
+  display: flex;
+}
+
+@mixin center() {
+  margin: auto;
+  text-align: center;
+}
+
+//These are the only ones I ever really use.
+@mixin border($width, $style, $color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}

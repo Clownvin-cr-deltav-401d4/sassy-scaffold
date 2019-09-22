@@ -1,0 +1,47 @@
+@import './lib/mixins';
+@import './lib/variables';
+@import './core/reset';
+@import './core/base';
+@import './core/header';
+@import './core/footer';
+
+body {
+  background-color: $primary-color;
+  color: $accent-color;
+}
+
+button, input[type=button], input[type=submit] {
+  border-style: solid;
+  border-radius: 15px;
+  background-color: $primary-color;
+  color: $accent-color;
+}
+
+header {
+  @include center();
+  color: $accent-color;
+}
+
+footer {
+  @include center();
+  color: $accent-color;
+}
+
+main {
+  @include center();
+  color: $accent-color;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $accent-color;
+  text-decoration: none;
+}
+
+p {
+  color: $accent-color;
+}
