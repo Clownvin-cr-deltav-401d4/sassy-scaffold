@@ -1,0 +1,46 @@
+@import '../lib/variables';
+@import '../lib/mixins';
+
+#root > header {
+  nav {
+    font-size: 150%;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-bottom: 3%;
+    div {
+      padding: 3px;
+      flex-grow: 1;
+      position: relative;
+      @include border(2px, solid, $accent-color); 
+    }
+    div > ul {
+      display: none;
+      position: absolute;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1000;
+      width: 100%;
+      right: -2px;
+      top: 100%;
+      @include border(2px, solid, $accent-color);
+    }
+    div > ul > li {
+      padding: 3px;
+      margin: 0;
+      display: block;
+      background-color: $primary-color;
+    }
+    div > ul > li:hover {
+      background-color: $primary-light;
+    }
+    div:hover {
+      border-color: $accent-color;
+    }
+    div:hover > ul {
+      display: block;
+    }
+  }
+}
