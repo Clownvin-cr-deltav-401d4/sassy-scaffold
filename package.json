@@ -2,13 +2,32 @@
   "name": "sassy-scaffold",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "keywords": [],
+  "main": "src/index.js",
   "scripts": {
-    "scss": "node-sass --watch styles -o css"
+    "scss": "node-sass ./src/styles/design.scss -o css",
+    "scss-watch": "node-sass --watch src/styles -o css",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.12.0"
-  }
+    "node-sass": "^4.12.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-router-dom": "5.0.0",
+    "react-scripts": "2.1.8"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

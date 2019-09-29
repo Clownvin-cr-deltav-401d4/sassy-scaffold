@@ -4,6 +4,7 @@
 @import './core/base';
 @import './core/header';
 @import './core/footer';
+@import './core/nav';
 
 body {
   background-color: $primary-color;
@@ -15,6 +16,10 @@ button, input[type=button], input[type=submit] {
   border-radius: 15px;
   background-color: $primary-color;
   color: $accent-color;
+}
+
+h1 {
+  font-size: 300%;
 }
 
 header {
