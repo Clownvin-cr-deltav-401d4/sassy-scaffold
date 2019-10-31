@@ -13,72 +13,42 @@ const Form = props => {
           <span>Your Name</span>
           <input placeholder="Your Name" type="text" />
         </label>
-      </fieldset>
-      <fieldset>
-        <legend>Password</legend>
         <label>
           <span>Your Password</span>
           <input type="password" />
         </label>
-      </fieldset>
-      <fieldset>
-        <legend>Telephone</legend>
         <label>
           <span>Phone Number</span>
           <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
         </label>
-      </fieldset>
-      <fieldset>
-        <legend>URL</legend>
         <label>
           <span>URL</span>
           <input type="url" />
         </label>
-      </fieldset>
-      <fieldset>
-        <legend>Email</legend>
         <label>
           <span>Email</span>
           <input type="email" />
         </label>
-      </fieldset>
-      <fieldset>
-        <legend>Number</legend>
         <label>
           <span>Num</span>
           <input placeholder="4" type="number" />
         </label>
-      </fieldset>
-      <fieldset>
-        <legend>Time</legend>
         <label>
           <span>Time</span>
           <input type="time" />
         </label>
-      </fieldset>
-      <fieldset>
-        <legend>Week</legend>
         <label>
           <span>Week</span>
           <input type="week" />
         </label>
-      </fieldset>
-      <fieldset>
-        <legend>Month</legend>
         <label>
           <span>Month</span>
           <input type="month" />
         </label>
-      </fieldset>
-      <fieldset>
-        <legend>Date</legend>
         <label>
           <span>Date</span>
           <input type="date" />
         </label>
-      </fieldset>
-      <fieldset>
-        <legend>Color</legend>
         <label>
           <span>Color</span>
           <input type="color" />
