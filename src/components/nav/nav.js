@@ -3,7 +3,7 @@ import React from 'react';
 import './nav.scss';
 
 const Nav = props => {
-  return <nav>{props.children}</nav>;
+  return <nav className={props.type}>{props.children}</nav>;
 };
 
 export default Nav;
