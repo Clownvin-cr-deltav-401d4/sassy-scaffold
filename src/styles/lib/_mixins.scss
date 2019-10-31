@@ -18,3 +18,14 @@
   border-style: $style;
   border-color: $color;
 }
+
+@mixin outline($width, $style, $color) {
+  outline: $width $style $color;
+}
+
+@mixin userSelect($value) {
+  user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  -webkit-user-select: $value;
+}
