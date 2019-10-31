@@ -3,8 +3,6 @@
 
 #root > main > nav {
   background: $primary-dark;
-  height:2em;
-  width:100%;
   
   li {        
     padding: .5em 1em;
@@ -31,10 +29,12 @@
       list-style-type:none;
       display:flex;
       flex-direction:row;
+      justify-content: space-evenly;
       
       > li {
         
         position:relative;
+        flex-grow: 1;
         
         > ul {
           background: $primary-dark;
@@ -56,4 +56,10 @@
       }
       
     }
+  &.vertical {
+    > ul {
+      flex-direction: column;
+      justify-content: baseline;
+    }
+  }
 }
