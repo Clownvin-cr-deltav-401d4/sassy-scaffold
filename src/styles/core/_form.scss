@@ -16,35 +16,35 @@ form {
     flex-direction: column;
     justify-content: baseline;
     border-radius: 3px;
+  }
+	
+	label {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 
-    label {
-      display: grid;
-      grid-template-columns: 1fr 4fr;
-
-      span {
-        text-align: right;
-        margin: auto;
-        margin-right: 5%;
-        @include userSelect(none);
-      }
+    span {
+      text-align: right;
+      margin: auto;
+      margin-right: 5%;
+      @include userSelect(none);
     }
+  }
 
-    input, select, textarea, button {
-      text-align: center;
-      border: 1px solid $primary-light !important;
-      margin: 3px;
-      background-color: $primary-dark !important;
-      color: $accent-color !important;
-      outline: none !important;
-      &::selection {
-        color: $primary-dark;
-        background-color: $accent-color;
-      }
+  input, select, textarea, button {
+    text-align: center;
+    border: 1px solid $primary-light !important;
+    margin: 3px;
+    background-color: $primary-dark !important;
+    color: $accent-color !important;
+    outline: none !important;
+    &::selection {
+      color: $primary-dark;
+      background-color: $accent-color;
     }
+  }
 
-    option:checked {
-      color: $primary-dark !important;
-      background-color: $accent-color !important;
-    }
+  option:checked {
+    color: $primary-dark !important;
+    background-color: $accent-color !important;
   }
 }
