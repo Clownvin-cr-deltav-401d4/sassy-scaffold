@@ -1,0 +1,69 @@
+@import '../lib/mixins';
+@import '../lib/variables';
+
+aside.sidebar, div.sidebar, section.sidebar {
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: -15vw;
+  width: calc( 15vw + 10px);
+  height: 100vh;
+  background-color: $primary-light;
+  z-index: 10000;
+  transition-duration: 0.5s;
+  overflow-x: hidden;
+  user-select: none;
+
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+
+  button.sidebar {
+    transition-duration: 0.5s;
+    z-index: 2000;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -2.5vmax;
+    border: none;
+    width: 2.5vmax;
+    height: 2.5vmax;
+    border-radius: 0 0 15% 0;
+    font-size: 150%;
+    text-align: center;
+    background-color: $primary-light;
+  }
+
+  &:hover {
+    transform: translateX(15vw);
+
+    button.sidebar {
+      opacity: 0;
+    }
+  }
+
+  *:not(.sidebar) {
+    line-height: 5vh;
+    margin: 0 auto;
+    margin-top: 1vh;
+    margin-left: 0;
+    min-width: 45px;
+    width: 15vw;
+    min-height: 5vh;
+    max-height: 5vh;
+    border-radius: 0 5px 5px 0;
+    transition-duration: 0.25s;
+    font-size: 150%;
+    box-shadow: 0 0 5px $primary-darker;
+
+    &:hover {
+      background-color: $accent-color;
+      color: $primary-color;
+    }
+    //background-color: white;
+  }
+}
